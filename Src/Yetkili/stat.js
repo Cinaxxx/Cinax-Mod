@@ -17,7 +17,6 @@ module.exports.raviwen = async(client, message, args, config) => {
     let jailler = db.get(`jail.${message.author.id}`)
     let cmuteler = db.get(`cmute.${message.author.id}`)
     let vmuteler = db.get(`vmute.${message.author.id}`)
-    let vban = db.get(`vban.${message.author.id}`)
     let kick = db.get(`kick.${message.author.id}`)
 
     message.channel.send(new MessageEmbed()
