@@ -113,15 +113,6 @@ client.on('guildMemberAdd', async (member) => {
       await member.voice.setMute(true);
     }, ms(zaman));
 }})
-// VBan
-client.on('guildMemberAdd', async (member) => {
-  let vbanlı = db.fetch(`vbanlı.${member.id}.${member.guild.id}`)
-  if(!vbanlı) return;
-  if(vbanlı == 'vbanlı'){
-    client.channels.cache.get(raviwen.Kanallar.CezaUyarı).send(`${member} Sunucumuza giriş yaptı. Datasında kayıtlı ceza bulunduğu için bulunan cezayı tekrardan işledim.`)
-    await db.delete(`vbanlı.${member.id}.${member.guild.id}`)
-    await member.roles.add(raviwen.Roller.VoiceBan)
-}})
 
 //--------------------------------------------------------------------------------------//
 
