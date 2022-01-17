@@ -10,7 +10,6 @@
         "transportYT": "TAŞIMA YETKİSİ"
     },
     "Roller": {
-        "VoiceBan": "VOİCE BAN ROL ID",
         "Jailed": "JAİL ROL ID",
         "Muted": "CHAT MUTE ROL ID",
         "VMuted": "VOİCE MUTE ROL ID",
