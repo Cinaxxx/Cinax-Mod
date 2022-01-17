@@ -1,0 +1,26 @@
+{
+    "muted": "<:realtayfamute:908374388653580310> ",
+    "unmuted": "<:realtayfaunmuted:908434414000799784> ",
+    "fmute": "<:servermute:930093985802911817>",
+
+    "unDeafen": "<:undeafen:909873302028312606>",
+    "deafen": "<:deafen:909873301847941191> ",
+    "fdeafn": "",
+
+    "joined": "<:join:909874232899534898>",
+    "leaved": "<:leave:909874232983453756>",
+    
+    "camera": "<:kamera:909873302154133534>",
+    "stream": "",
+    "changeState": "↕️",
+
+    "success": "",
+    "mark": "<a:onay:905469263828099072>",
+    "mark2": "",
+    "cross2": "<a:red:905469286938730608>",
+
+    "Error": "❌",
+
+    "hapishane": "<:Cezalandrld:908374381883965470> ",
+    "banhammer": "<:banhammer:916642653498662953>"
+}

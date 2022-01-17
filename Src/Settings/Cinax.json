@@ -1,0 +1,35 @@
+{
+    "Yetkili": {
+        "Owner": "OWNER ROL İD",
+        "AbilityYT": "TÜM KOMUTLARI KULLANAN",
+        "BanYT": "BAN YETKİSİ",
+        "KickYT": "KİCK YETKİSİ",
+        "jailYT": "JAİL YETKİSİ",
+        "muteYT": "MUTE YETKİSİ",
+        "vmuteYT": "VMUTE YETKİSİ",
+        "transportYT": "TAŞIMA YETKİSİ"
+    },
+    "Roller": {
+        "VoiceBan": "VOİCE BAN ROL ID",
+        "Jailed": "JAİL ROL ID",
+        "Muted": "CHAT MUTE ROL ID",
+        "VMuted": "VOİCE MUTE ROL ID",
+        "Booster": "BOOSTER ROL ID",
+        "Member": "ÜYE ROL ID",
+
+        "OneMonth": "1 AYLIK ÜYE ROL ID",
+        "ThreeMonth": "3 AYLIK ÜYE ROL ID",
+        "SixMonth": "6 AYLIK ÜYE ROL ID",
+        "NineMonth": "9 AYLIK ÜYE ROL ID",
+        "TwelveMonth": "12 AYLIK ÜYE ROL ID",
+        "TwoYear": "2 YILLIK ÜYE ROL ID"
+    },
+    "Kanallar": {
+        "ChatChannel": "SOHBET KANALI ID",
+        "YeniÜye": "HG MESAJ KANALI ID",
+        "Kurallar": "KURALLAR KANALI ID"
+    },
+    "Log": {
+        "CezaPuanLog": "CEZA PUAN LOG"
+    } 
+}

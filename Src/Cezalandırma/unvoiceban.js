@@ -1,0 +1,36 @@
+const { MessageEmbed } = require('discord.js');
+const raviwen = require('../Src/Settings/Cinax.json')
+const emoji = require('../Src/Settings/Emoji.json')
+const db = require('quick.db')
+
+
+module.exports.config = { 
+    name: 'unvoiceban',
+    aliases: ['unvban']
+}
+
+module.exports.raviwen = async(client, message, args, config) => {
+
+    if(![raviwen.Yetkili.AbilityYT,raviwen.Yetkili.jailYT].some(role => message.member.roles.cache.get(role)) && !message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('Gerekli yetkilere sahip değilsin.')
+    const uye = message.mentions.members.first() || message.guild.members.cache.get(args[0])
+    if(!uye) return message.channel.send('Belirttiğiniz üyeyi bulamadım.')
+    let sebep = args.splice(1).join(" ")
+    if(!sebep) return message.channel.send('Bir sebep belirtmen gerekiyor.')
+    if(uye.id === message.author.id) 
+    return message.reply(`${emoji.Error} Kendi cezanı kaldıramazsın!`)
+    let vbanlı = db.fetch(`vbanlı.${uye.id}.${message.guild.id}`)
+    if(vbanlı == 'vbanlı') {
+    await db.delete(`vbanlı.${uye.id}.${message.guild.id}`)
+    uye.roles.remove(raviwen.Roller.VoiceBan)
+
+    const kaldırma = new MessageEmbed()
+    .setAuthor(message.author.tag, message.author.displayAvatarURL())
+    .setColor('RANDOM')
+    .setDescription(`${emoji.unmuted} **${uye}** isimli üyenin ses yasağı, ${message.author} tarafından kaldırıldı.`)
+
+    message.channel.send(kaldırma)
+     } else {
+        message.channel.send(`Kişinin voice banı bulunmuyor.`)
+     }
+    
+};
