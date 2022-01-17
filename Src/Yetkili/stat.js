@@ -26,7 +26,7 @@ module.exports.raviwen = async(client, message, args, config) => {
     \`˃\` ${uye} Yetkilisi toplam **${toplam || 0}** ceza komudu kullanmış.
 
     \`˃\` Bunlardan **${banlar || 0}** tanesi Ban, **${kick || 0}** tanesi Kick,
-    \`˃\` Bunlardan **${jailler || 0}** tanesi Jail, **${vban || 0}** tanesi Voice Ban,
     \`˃\` Bunlardan **${cmuteler || 0}** tanesi Chat Mute, **${vmuteler || 0}** tanesi Voice Mute.
+    \`˃\` Bunlardan **${jailler || 0}** tanesi Jail.
     `))
 };
